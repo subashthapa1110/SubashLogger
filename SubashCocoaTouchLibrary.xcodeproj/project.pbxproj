@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		BB73CF0020469D7F002717C4 /* SubashCocoaTouchLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = BB73CEFE20469D7F002717C4 /* SubashCocoaTouchLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB73CF0720469DEC002717C4 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB73CF0620469DEC002717C4 /* Logging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB73CEFB20469D7F002717C4 /* SubashCocoaTouchLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SubashCocoaTouchLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB73CEFE20469D7F002717C4 /* SubashCocoaTouchLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubashCocoaTouchLibrary.h; sourceTree = "<group>"; };
 		BB73CEFF20469D7F002717C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB73CF0620469DEC002717C4 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				BB73CEFE20469D7F002717C4 /* SubashCocoaTouchLibrary.h */,
 				BB73CEFF20469D7F002717C4 /* Info.plist */,
+				BB73CF0620469DEC002717C4 /* Logging.swift */,
 			);
 			path = SubashCocoaTouchLibrary;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					BB73CEFA20469D7F002717C4 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB73CF0720469DEC002717C4 /* Logging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 		BB73CF0420469D7F002717C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -265,6 +271,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = darkgraviton.SubashCocoaTouchLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -273,6 +280,7 @@
 		BB73CF0520469D7F002717C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
